@@ -1,7 +1,7 @@
 # Full-NewWebSecurityLock
-Projeto desenvolvido para o 4° semestre da faculdade inteiramente por mim, incluindo desenvolvimento de Arduino/ESP32 e APIs Web (Projeto Incompleto). 
+Projeto desenvolvido para o 4° semestre da faculdade, inteiramente por mim, incluindo desenvolvimento de Arduino/ESP32 e APIs Web (Projeto Incompleto). 
 
-Project developed for the 4th semester college fully by me, including Arduino/ESP32 development and Web APIs (Incomplete Project).
+Project developed for the 4th semester of college, fully by me, including Arduino/ESP32 development and Web APIs (Incomplete Project).
 
 ## Função | Function
 O projeto tinha a ideia uma fechadura controlada por ESP32 atráves da internet, mais especificamente por um website com APIs de controle e segurança. Ele foi entregue em dezembro de 2024, infelizmente incompleto e não polido,mas com a grande maioria das partes funcionando, porém não de uma maneira satisfátoria, e com certas partes desnecessárias, mas feitas pelo meu interesse. 
