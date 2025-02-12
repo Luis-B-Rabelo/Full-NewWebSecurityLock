@@ -1,0 +1,65 @@
+a, a:link, a:visited, a:hover, a:active
+{
+    text-decoration: none;
+    color: black;
+}
+
+#navbar
+{
+    grid-column: 1/4;
+    grid-row: 1;
+
+    position: sticky;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+    background-color: #5484FF;
+
+    display: grid;
+    grid-template-columns: 8% max-content auto 14% 17% 8% 8%;
+
+    font-size: 2vw;
+}
+
+.nav-div {
+    height: 100%;
+
+    text-align: center;
+    align-content: center;
+}
+
+.nav-option:hover 
+{
+    background-color: #4066c5;
+}
+
+#ID
+{
+    grid-column: 1;
+}
+
+#nav-div-name
+{
+    grid-column: 2;
+}
+
+#locks 
+{
+    grid-column: 4;
+}
+
+#settings 
+{
+    grid-column: 5;
+}
+
+#logs
+{
+    grid-column: 6;
+}
+
+#logout
+{
+    grid-column: 7;
+}

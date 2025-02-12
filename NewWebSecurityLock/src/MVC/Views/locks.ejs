@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewWebSL-Locks</title>
+
+    <link rel="stylesheet" href="css/locks-style.css"/>
+    <link rel="stylesheet" href="css/navbar-user-style.css"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
+
+    <script src="js/lock_funcs.js"></script>
+</head>
+<body>
+    <%- include ("../../../rsrc/public/templates/navbar-user.ejs", [account_id, user_name]); %>
+
+    <table id="locks-list">
+        <tr id="header">
+            <th id="lock-name-header">Nome</th>
+            <th class="lock-header">Fechado</th>
+            <th class="lock-header">Trancado</th>
+            <th class="lock-header">Logs</th>
+        </tr>
+        
+        <% locks.forEach( (lock) => 
+        { %>
+            <tr class="lock-row">
+                <td id="lock-id" hidden><%= lock.ID %></td>  
+                <td class="lock-names"><%= lock.name %></td>  
+                
+                <input id="lock-state-value" value="<%= lock.state %>" hidden>
+                <td class="lock-data" id="lock-state">
+                <%
+                    if(lock.state == true)
+                    { %>
+                        S
+                <%  }
+                    else
+                    { %>
+                        N
+                <%  } %>
+                </td>   
+                <td class="lock-data" >
+                <button id="open-close" onclick="openClose()" value="<%= lock.last_action %>">
+                <%
+                    if(lock.last_action == true)
+                    { %>
+                        S
+                <%  }
+                    else
+                    { %>
+                        N
+                <%  } %>
+                </button></td>  
+                <td>log</td>   
+            </tr>
+        <%
+        }); %>
+
+    </table>
+</body>
+</html>

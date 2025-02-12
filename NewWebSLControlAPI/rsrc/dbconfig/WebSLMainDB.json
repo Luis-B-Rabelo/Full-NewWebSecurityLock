@@ -1,0 +1,7 @@
+{
+    "host": "localhost",
+    "user": "root",
+    "database": "webslmaindb",
+    "password": "",
+    "waitForConnections": true
+}

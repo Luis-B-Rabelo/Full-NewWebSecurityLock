@@ -1,0 +1,81 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: "Kdam Thmor Pro", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body
+{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    grid-template-rows: 5% 90% 5%;
+    background-color: #D9D9D9;
+}
+
+#lock-img-background
+{
+    z-index: 0; 
+    grid-column: 2;
+    grid-row: 2;
+    width: 100%;
+    height: 100%;
+}
+
+#login-container
+{
+    z-index: 1;
+    grid-column: 2;
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 34% 22% 22% 22%;
+}
+
+.input-login
+{
+    width: 90%;
+    height: 60%;
+    margin-top: 12.5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    grid-column: 2;
+    grid-row: 2;
+    border-style: hidden;
+    border-radius: 4vw;
+    font-size: 2.9vw;
+    text-align: center;
+}
+
+.input-login:focus
+{
+    outline: none;
+}
+
+#email
+{
+    grid-column: 2;
+    grid-row: 2;
+}
+
+#password
+{
+    grid-column: 2;
+    grid-row: 3;
+}
+
+#button
+{
+    margin-left: 15%;
+    margin-top: 7.5%;
+    width: 70%;
+    height: 60%;
+    border-style: hidden;
+    border-radius: 6vw;
+    grid-column: 2;
+    grid-row: 4;
+}

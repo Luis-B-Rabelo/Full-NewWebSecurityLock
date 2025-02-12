@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewWebSl-Register-Worker</title>
+
+    <link rel="stylesheet" href="css/register-style.css"/>
+    <link rel="stylesheet" href="css/navbar-worker-style.css"/>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="main-grid">
+
+        <form method="POST" action="http://<%= ipv4 %>:3000/registerAccount" id="register-container" autocomplete="off">
+            <div id="form-title">Registrar Funcionário</div>
+            <input class="input-container" id="email" placeholder="Email"  name="email" type="text">
+            <input class="input-container" id="name" placeholder="Nome" name="name" type="text">
+            <input id="level" name="level" value="1"  hidden>
+            <input class="input-container" id="password" placeholder="Senha" name="password" type="password">
+            <input type="submit" id="register-button" value="Registrar">
+        </form>
+
+    </div>
+</body>
+</html>

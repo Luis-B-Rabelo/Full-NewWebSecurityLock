@@ -1,0 +1,22 @@
+{
+  "name": "newwebsltokenapi",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "ts-node src/index.ts",
+    "build": "tsc",
+    "serve": "node dist/index.js"
+  },
+  "author": "Luis-B-Rabelo",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@types/express": "^5.0.0",
+    "body-parser": "^1.20.3",
+    "express": "^4.21.1",
+    "node-schedule": "^2.1.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  }
+}
