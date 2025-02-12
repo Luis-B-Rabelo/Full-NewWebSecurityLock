@@ -27,3 +27,8 @@ This is the API that makes contact and control the ESP32.
 A mais desnecessária API, mas é a que mais me orgulho, é um sistema de tokenização razoavelmente completo, conta com uma criação de Tokens de verifição único de uma segurança média, também tendo seu próprio verificação e uma com automatização de atualização de chaves de segurança controlada por tempo. 
 
 The most unnecessary API, but the one that I am most proud, is a reasonably completed tokenization system, that has the creation of unique verification Token with an average security, it also has an own verification method and an automation for updating security keys that is controlled by time.
+
+## WebSL_Esp32_Code.ino
+Código do ESP32.
+
+ESP32 code.
